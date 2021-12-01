@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script type="text/javascript" src="{{ url_for('static', filename = 'socket.io.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
+        <link rel="stylesheet" type="text/css" id="styles" href="{{ url_for('static', filename = 'styles.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+        <title>BuildnShoot</title>
+	</head>
+	<body>
+		<div id="container">
+			{% block container %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
